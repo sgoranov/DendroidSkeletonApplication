@@ -1,0 +1,30 @@
+{
+  "name": "sgoranov/dendroid-skeleton-application",
+  "license": "BSD",
+  "authors": [
+    {
+      "name": "Simeon Goranov",
+      "email": "sgoranov@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.4.0",
+    "sgoranov/dendroid-framework": "dev-master",
+    "php-di/php-di": "dev-master",
+    "doctrine/orm": "^2.6.2",
+    "phlak/config": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "sgoranov\\Dendroid\\": "src/",
+      "App\\": "app/"
+    }
+  },
+  "repositories": [
+    {
+      "url": "https://github.com/sgoranov/DendroidFramework.git",
+      "type": "git"
+    }
+  ]
+}

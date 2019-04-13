@@ -1,0 +1,31 @@
+{
+  "name": "dendroid-framework",
+  "version": "1.0.0",
+  "description": "Desktop like development for Web with PHP",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bower": "^1.8.8",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-dart-sass": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "merge-stream": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgoranov/SPF.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sgoranov/SPF/issues"
+  },
+  "homepage": "https://github.com/sgoranov/SPF#readme"
+}

@@ -1,0 +1,31 @@
+<h2>Notes</h2>
+
+<?php if (count($this->notes) > 0): ?>
+
+<div class="card-columns mt-3 mb-3">
+
+    <?php foreach ($this->notes as $note):?>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"><?php echo $this->escape($note->getTitle()); ?></h5>
+                <p class="card-text"><?php echo $this->escape($note->getDescription()); ?></p>
+
+                <a href="<?php echo $this->routing->createUrl('\App\Component\Note\Update', [$note->getId()]) ?>" class="card-link">Update</a>
+                <a href="#" class="card-link delete" data-id="<?php echo $note->getId();?>" data-toggle="modal" data-target="#deleteModal">Delete</a>
+            </div>
+        </div>
+
+    <?php endforeach;?>
+
+</div>
+
+<div spf="pagination"></div>
+
+<?php else: ?>
+
+Please click on "Create New" button to add a note.
+
+<?php endif; ?>
+
+<?php include "Delete.phtml" ?>

@@ -1,0 +1,11 @@
+.idea/
+vendor/
+composer.lock
+package-lock.json
+node_modules/
+web/css/
+web/images/
+web/js/
+var/logs/
+assets/bootstrap
+assets/jquery
