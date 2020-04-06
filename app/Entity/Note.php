@@ -18,6 +18,11 @@ class Note
     private $id;
 
     /**
+     * @ORM\ManyToOne(targetEntity="User")
+     */
+    private $user;
+
+    /**
      * @ORM\Column(type="string")
      */
     private $title;
@@ -41,6 +46,22 @@ class Note
     public function setId($id): void
     {
         $this->id = $id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param mixed $user
+     */
+    public function setUser($user): void
+    {
+        $this->user = $user;
     }
 
     /**

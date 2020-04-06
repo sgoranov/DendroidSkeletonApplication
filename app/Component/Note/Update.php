@@ -1,15 +1,15 @@
 <?php
 namespace App\Component\Note;
 
+use App\Component\Login\ProtectedPage;
 use App\Component\Note\Form\Note;
 use App\Repository\NoteRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use sgoranov\Dendroid\Bootstrap\Component\FlashMessenger;
-use sgoranov\Dendroid\Component\Page;
 use sgoranov\Dendroid\Component\Route;
 use sgoranov\Dendroid\Component\RoutedComponent;
 
-class Update extends Page implements RoutedComponent
+class Update extends ProtectedPage implements RoutedComponent
 {
     private \App\Entity\Note $note;
     private Note $form;

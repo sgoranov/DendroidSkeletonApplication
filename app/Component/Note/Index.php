@@ -1,14 +1,14 @@
 <?php
 namespace App\Component\Note;
 
+use App\Component\Login\ProtectedPage;
 use App\Repository\NoteRepository;
 use sgoranov\Dendroid\Bootstrap\Component\FlashMessenger;
 use sgoranov\Dendroid\Bootstrap\Component\Pagination;
-use sgoranov\Dendroid\Component\Page;
 use sgoranov\Dendroid\Component\Route;
 use sgoranov\Dendroid\Component\RoutedComponent;
 
-class Index extends Page implements RoutedComponent
+class Index extends ProtectedPage implements RoutedComponent
 {
     use Delete, Paginated;
 
