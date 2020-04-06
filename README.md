@@ -15,6 +15,12 @@ FLUSH PRIVILEGES;
 
 Please set different username and secret and do not use the defaults.
 
+Import the database schema:
+
+```bash
+mysql -u admin -p < schema.sql
+```
+
 ## Install and minify assets
 
 Run npm install to install gulp, bower and their dependencies:
@@ -33,12 +39,12 @@ node_modules/bower/bin/bower install jquery
 Run gulp to install and minify the assets:
 
 ```bash
-
+node_modules/gulp/bin/gulp.js
 ```
 
-## Setup
+## Install PHP dependencies
 
-Execute the following to prepare the application:
+Execute the following to install PHP dependencies via Composer:
 
 ```bash
 compser install
