@@ -55,5 +55,5 @@ compser install
 To start the built-in web server execute the following command from project's directory:
 
 ```bash
-php -S localhost:5001 -t web/
+php -S localhost:8080 -t web/
 ```
